@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hava Durumu</string>
+    <string name="select_location">Bölge Seç</string>
+    <string name="or">Ya da</string>
+    <string name="mark">işaretçi</string>
+    <string name="error_txt">Bir hata oluştu!</string>
+    <string name="enter_app_for_widget">Widget\'i başlatmak için lütfen uygulamaya girin!</string>
+    <string name="need_location_permission">Konum izni gerekiyor!</string>
+    <string name="location_permission_description">Bulunduğunuz bölgedeki hava durumunu öğrenmek için konum izni vermeniz gerekiyor.</string>
+    <string name="give_location_permission">Konum izni ver</string>
+    <string name="use_location">Konum Kullan</string>
+    <string name="tempmax">Max Sıcaklık</string>
+    <string name="tempmin">Min Sıcaklık</string>
+    <string name="temp">Sıcaklık</string>
+    <string name="dew">Çiğ Noktası</string>
+    <string name="feelslike">Hissedilen</string>
+    <string name="precip">Yağış</string>
+    <string name="precipprob">Yağış Olasılığı</string>
+    <string name="precipcover">Yağış Örtüsü</string>
+    <string name="preciptype">Yağış Türü</string>
+    <string name="snow">Kar</string>
+    <string name="snowdepth">Kar Derinliği</string>
+    <string name="wind">Rüzgar</string>
+    <string name="windspeed">Rüzgar Hızı</string>
+    <string name="windgust">Rüzgar</string>
+    <string name="winddir">Rüzgar Yönü</string>
+    <string name="visibility">Görüş Uzaklığı</string>
+    <string name="cloudcover">Bulut Örtüsü</string>
+    <string name="humidity">Nem</string>
+    <string name="pressure">Deniz Seviyesi Basıncı</string>
+    <string name="solarradiation">Güneş Radyasyonu</string>
+    <string name="solarenergy">Güneş Enerjisi</string>
+    <string name="uvindex">UV İndeks</string>
+    <string name="severerisk">Şiddetli Risk</string>
+    <string name="sunrise">Gün Doğumu</string>
+    <string name="sunset">Gün Batımı</string>
+    <string name="moonphase">Ay evresi</string>
+    <string name="location_not_found">konum bulunamadı!</string>
+    <string name="kph">km/s</string>
+    <string name="add_widget">Widget ekle</string>
+    <string name="app_widget_description">Hava Durumu</string>
+</resources>
