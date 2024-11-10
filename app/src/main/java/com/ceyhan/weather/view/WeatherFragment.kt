@@ -1,31 +1,23 @@
 package com.ceyhan.weather.view
 
 import android.content.Context
-import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.NavOptions
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView.Orientation
 import com.ceyhan.weather.R
 import com.ceyhan.weather.adapter.HourTempAdapter
 import com.ceyhan.weather.adapter.WeatherDayRecyclerAdapter
 import com.ceyhan.weather.databinding.FragmentWeatherBinding
-import com.ceyhan.weather.model.Hour
 import com.ceyhan.weather.model.WeatherDayModel
 import com.ceyhan.weather.viewModel.WeatherViewModel
 import com.google.android.gms.maps.model.LatLng
-import java.lang.Error
-import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.LocalDateTime
-import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 
 class WeatherFragment : Fragment() {

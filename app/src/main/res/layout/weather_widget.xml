@@ -61,7 +61,6 @@
             android:id="@+id/widgetLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sarıyer, İstanbul"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:fontFamily="@font/retosta"/>
@@ -81,7 +80,6 @@
                     android:id="@+id/widgetTemp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="15°"
                     android:textSize="30sp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/retosta"/>
@@ -89,7 +87,6 @@
                     android:id="@+id/widgetFeelsLike"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hissedilen: 15°"
                     android:textColor="@color/white"
                     android:fontFamily="@font/retosta"/>
             </LinearLayout>
@@ -111,21 +108,18 @@
                     android:id="@+id/widgetWindSpeed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rüzgar: 2.7 km/s"
                     android:textColor="@color/white"
                     android:fontFamily="@font/retosta"/>
                 <TextView
                     android:id="@+id/widgetPrecipitationChance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yağış: %0°"
                     android:textColor="@color/white"
                     android:fontFamily="@font/retosta"/>
                 <TextView
                     android:id="@+id/widgetHumidity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nem: %92°"
                     android:textColor="@color/white"
                     android:fontFamily="@font/retosta"/>
             </LinearLayout>

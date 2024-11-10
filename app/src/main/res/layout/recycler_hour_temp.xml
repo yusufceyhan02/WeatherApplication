@@ -13,7 +13,6 @@
         android:id="@+id/recyclerHour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:00"
         android:textColor="@color/white"
         android:fontFamily="@font/retosta"/>
 
@@ -22,7 +21,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="15°C"
         android:textColor="@color/white"
         android:fontFamily="@font/retosta"/>
 </LinearLayout>

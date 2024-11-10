@@ -34,7 +34,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="24 ekim 2024, Pazartesi"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textColor="@color/white"
@@ -48,7 +47,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="35"
                 android:textSize="90sp"
                 android:textColor="@color/white"
                 android:fontFamily="@font/retosta"
@@ -60,9 +58,9 @@
                 android:id="@+id/textView26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="°"
                 android:textColor="@color/white"
                 android:textSize="80sp"
+                android:text="°"
                 android:fontFamily="@font/retosta"
                 app:layout_constraintStart_toEndOf="@+id/BottomSheetTemp"
                 app:layout_constraintTop_toTopOf="@+id/BottomSheetTemp" />
@@ -72,7 +70,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:text="Hissedilen: 35"
                 android:textColor="@color/white"
                 android:fontFamily="@font/retosta"
                 app:layout_constraintBottom_toBottomOf="@+id/BottomSheetTemp"
@@ -87,7 +84,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/BottomSheetFeels"
                 app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
                 app:layout_constraintStart_toEndOf="@+id/BottomSheetTemp"
-                app:layout_constraintTop_toTopOf="@+id/BottomSheetTemp" />
+                app:layout_constraintTop_toTopOf="@+id/BottomSheetTemp"
+                android:importantForAccessibility="no" />
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -104,7 +102,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
-                    android:text="Rüzgar: 33"
                     android:textColor="@color/white"
                     android:fontFamily="@font/retosta"/>
 
@@ -113,7 +110,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
-                    android:text="Yağış: 10"
                     android:textColor="@color/white"
                     android:fontFamily="@font/retosta"/>
 
@@ -122,7 +118,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
-                    android:text="Nem: 10"
                     android:textColor="@color/white"
                     android:fontFamily="@font/retosta"/>
             </LinearLayout>
@@ -172,7 +167,6 @@
                     android:id="@+id/BottomSheetDetailsTempMax"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="%15"
                     android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -217,7 +211,6 @@
                     android:id="@+id/BottomSheetDetailsTempMin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="%15"
                     android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -263,7 +256,6 @@
                     android:id="@+id/BottomSheetDetailsWindSpeed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="15"
                     android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -308,7 +300,6 @@
                     android:id="@+id/BottomSheetDetailsPrecipProb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="%15"
                     android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -354,7 +345,6 @@
                     android:id="@+id/BottomSheetDetailsHumidity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="%15"
                     android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -398,7 +388,6 @@
                     android:id="@+id/BottomSheetDetailsDew"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="%15"
                     android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -445,7 +434,6 @@
                     android:id="@+id/BottomSheetDetailsUvIndex"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="15"
                     android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -490,7 +478,6 @@
                     android:id="@+id/BottomSheetDetailsPressure"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="15"
                     android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"

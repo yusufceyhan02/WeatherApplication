@@ -1,6 +1,5 @@
 package com.ceyhan.weather.service
 
-import android.content.Context
 import com.ceyhan.weather.model.PlaceDetails
 import com.ceyhan.weather.model.Weather
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
