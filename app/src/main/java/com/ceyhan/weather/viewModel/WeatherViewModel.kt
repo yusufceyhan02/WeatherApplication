@@ -23,6 +23,8 @@ class WeatherViewModel : ViewModel() {
     private val apiService = ApiService()
 
     fun getLocationData(latitude: Double, longitude: Double) {
+        jobs.clear()
+        disposable.clear()
         progress.value = true
         getPlaceDetails(latitude, longitude)
         getWeatherFromApi(latitude, longitude)
@@ -40,7 +42,7 @@ class WeatherViewModel : ViewModel() {
                     }
 
                     override fun onError(e: Throwable) {
-                        println(e.message)
+
                         completeJob(false)
                     }
 
@@ -71,7 +73,7 @@ class WeatherViewModel : ViewModel() {
         jobs.add(jobStatus)
         if (jobs.size == 2) {
             progress.value = false
-            error.value = !jobs.all { true }
+            error.value = !jobs.all { it }
             disposable.clear()
         }
     }

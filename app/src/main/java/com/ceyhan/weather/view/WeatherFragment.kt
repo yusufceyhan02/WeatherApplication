@@ -49,6 +49,9 @@ class WeatherFragment : Fragment() {
         binding.changeLocationButton.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.action_weatherFragment_to_selectLocationFragment)
         }
+        binding.weatherErrorTryAgainButton.setOnClickListener {
+            viewModel.getLocationData(location.latitude,location.longitude)
+        }
     }
 
     private fun getArgument(complete: () -> Unit) {
@@ -165,10 +168,11 @@ class WeatherFragment : Fragment() {
         //Progress Bar
         viewModel.progress.observe(viewLifecycleOwner) {progress ->
             if (progress) {
-                binding.weatherProgressBar.visibility = View.VISIBLE
                 binding.weatherBg.visibility = View.INVISIBLE
                 binding.weatherBgMask.visibility = View.INVISIBLE
                 binding.weatherView.visibility = View.INVISIBLE
+                binding.weatherErrorLayout.visibility = View.INVISIBLE
+                binding.weatherProgressBar.visibility = View.VISIBLE
             }
         }
 
@@ -176,10 +180,14 @@ class WeatherFragment : Fragment() {
         viewModel.error.observe(viewLifecycleOwner) {error ->
             if (error){
                 binding.weatherProgressBar.visibility = View.INVISIBLE
-                //ERROR
+                binding.weatherView.visibility = View.INVISIBLE
+                binding.weatherBg.visibility = View.INVISIBLE
+                binding.weatherBgMask.visibility = View.INVISIBLE
+                binding.weatherErrorLayout.visibility = View.VISIBLE
             }
             else {
                 binding.weatherProgressBar.visibility = View.INVISIBLE
+                binding.weatherErrorLayout.visibility = View.INVISIBLE
                 binding.weatherBg.visibility = View.VISIBLE
                 binding.weatherBgMask.visibility = View.VISIBLE
                 binding.weatherView.visibility = View.VISIBLE

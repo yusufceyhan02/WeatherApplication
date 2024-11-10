@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.WeatherFragment">
@@ -29,6 +30,33 @@
         android:layout_height="wrap_content"
         android:visibility="visible"
         android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/weatherErrorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_txt"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/retosta"/>
+
+        <Button
+            android:id="@+id/weatherErrorTryAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="10dp"
+            android:text="@string/places_try_again"/>
+
+    </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/weatherView"
