@@ -28,17 +28,12 @@ class WeatherWidget : AppWidgetProvider() {
         }
     }
 
-    override fun onEnabled(context: Context) {
-        super.onEnabled(context)
+    private fun updateAppWidget(context: Context, appWidgetManager: AppWidgetManager, appWidgetId: Int) {
         val views = RemoteViews(context.packageName, R.layout.weather_widget)
         views.setViewVisibility(R.id.widgetProgressBar,View.VISIBLE)
         views.setViewVisibility(R.id.weatherWidgetLayout,View.INVISIBLE)
         views.setViewVisibility(R.id.widgetErrorText,View.INVISIBLE)
         views.setViewVisibility(R.id.widgetWarningEnterApp,View.INVISIBLE)
-    }
-
-    private fun updateAppWidget(context: Context, appWidgetManager: AppWidgetManager, appWidgetId: Int) {
-        val views = RemoteViews(context.packageName, R.layout.weather_widget)
 
         getLocationData(context) { latitude, longitude ->
             if (latitude != null && longitude != null) {
@@ -105,7 +100,7 @@ class WeatherWidget : AppWidgetProvider() {
             views.setViewVisibility(R.id.weatherWidgetLayout,View.INVISIBLE)
             views.setViewVisibility(R.id.widgetErrorText,View.INVISIBLE)
             views.setViewVisibility(R.id.widgetWarningEnterApp,View.INVISIBLE)
-            if (jobs.all { true }) {
+            if (jobs.all { it }) {
                 views.setViewVisibility(R.id.weatherWidgetLayout,View.VISIBLE)
             }
             else {
@@ -113,6 +108,7 @@ class WeatherWidget : AppWidgetProvider() {
                 //Error View
             }
             disposable.clear()
+            jobs.clear()
             appWidgetManager.updateAppWidget(appWidgetId, views)
         }
     }

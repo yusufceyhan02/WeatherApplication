@@ -25,7 +25,7 @@
         android:id="@+id/widgetProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
+        android:translationZ="10dp"
         android:layout_gravity="center"/>
 
     <TextView
